@@ -4,6 +4,13 @@ read -p "Input User : " user
 read -p "Input Password : " password
 read -p "Input Port (Recomend Range : 1000-5000) : " port
 
+sudo apt-get update && apt-get -y install curl git
+sudo apt-get install build-essential
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt-get -y install nodejs
+
+
 #Create User
 sudo adduser --disabled-password --gecos "" $user
 
